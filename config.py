@@ -5,6 +5,8 @@ from posixpath import devnull
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
+C = ty.TypeVar('C')
+
 class DatabaseEngine:
     @staticmethod
     def create_db_engine(app_env: str):
@@ -16,8 +18,6 @@ class DatabaseEngine:
         
         return ""
 
-
-C = ty.TypeVar('C')
 class BaseConfig(ty.Generic[C]):
     """Base Config"""
     DEBUG: bool = True
