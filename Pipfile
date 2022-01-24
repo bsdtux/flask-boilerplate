@@ -11,6 +11,7 @@ python-dotenv = "*"
 
 [dev-packages]
 pytest = "*"
+mock = "*"
 
 [requires]
 python_version = "3.9"

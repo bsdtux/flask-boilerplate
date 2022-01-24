@@ -18,8 +18,7 @@ def create_app() -> Flask:
     api.init_app(app)
     db.init_app(app)
     migrate.init_app(app, db)
-    
+
     from .views.index import index_ns
 
     return app
-

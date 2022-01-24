@@ -1,9 +1,10 @@
 """ Index Route """
-from api import api
 from flask_restx import Resource
 
+from api import api
 
 index_ns = api.namespace("status", description="Status route")
+
 
 @index_ns.route("/")
 class Index(Resource):
